@@ -33,9 +33,10 @@ int main(){
             printf("%d / %d = %d\n", num1,num2, num1 / num2);
             break;
         default:
+            printf("Saliendo...\n");
             exit = 1;
             break;
         }
-    } while (exit == 0);
+    } while (exit != 1);
     
 }

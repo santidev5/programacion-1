@@ -13,7 +13,7 @@ int main(){
 
     while (intentos <= 5)
     {
-        printf("Adivine el numero entre 0 y 100\n");
+        printf("Adivine el numero entre 0 y 100, en 5 intentos\n");
         scanf("%d", &intento);
 
         if (intento == random)
@@ -29,8 +29,8 @@ int main(){
 
         if (intentos == 5)
         {
-            printf("No te quedan más intentos\n");
-            printf("Presiona 1 para volve a jugar, 2 para ver tu record, cualquier otro caracter para salir\n");
+            printf("No te quedan mas intentos\n");
+            printf("Presiona 1 para volver a jugar, 2 para ver tu record, cualquier otro caracter para salir\n");
             scanf("%d",&respuesta);
             switch (respuesta)
             {
@@ -52,7 +52,7 @@ int main(){
             }
             
         }else{
-            printf("%d Intentos\n",intentos);
+            printf("Intento numero %d\n",intentos);
         }
         intentos++;
     }
